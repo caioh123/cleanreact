@@ -1,5 +1,6 @@
 {
-    "extends": "standard-with-typescript",
+    "extends": ["standard-with-typescript", "prettier"],
+    "plugins": ["prettier"],
     "parserOptions": {
         "project": "./tsconfig.json"
     },
@@ -7,6 +8,7 @@
         "@typescript-eslint/consistent-type-definitions": "off",
         "@typescript-eslint/strict-boolean-expressions": "off",
         "indent": "off",
-        "@typescript-eslint/consistent-type-imports": "off"
+        "@typescript-eslint/consistent-type-imports": "off",
+        "prettier/prettier": ["error"]
     }
 }
